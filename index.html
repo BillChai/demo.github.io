@@ -85,9 +85,11 @@
 
 
         // カメラコントローラーを作成
-        const controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.2;
+        //const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        //controls.enableDamping = true;
+        //controls.dampingFactor = 0.2;
+        
+        
         // points
         const particleCount = 15000
         let points
@@ -188,7 +190,7 @@
         */
 
         // 設定したカメラ位置からシーンの描画（レンダリング）
-        controls.update()
+        //controls.update()
         renderer.render(scene, camera);
 
 
